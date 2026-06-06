@@ -1,0 +1,2 @@
+description = "Switch terse-mode intensity level (lite/full/ultra) or turn it off"
+prompt = "Switch to terse {{args}} mode. If no level is given, use full. Answer first; cut filler, pleasantries, hedging, preamble, and recap; keep complete grammatical sentences and articles — no fragments. Technical terms, code, and error strings stay exact."

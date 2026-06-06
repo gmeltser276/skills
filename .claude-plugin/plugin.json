@@ -1,0 +1,31 @@
+{
+  "name": "terse-mode",
+  "description": "Token-efficient communication mode. Cuts output tokens by removing filler, hedging, and preamble while keeping full grammar and technical accuracy.",
+  "author": { "name": "Gene Meltser" },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/terse-activate.js\"",
+            "timeout": 5,
+            "statusMessage": "Loading terse mode..."
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/terse-tracker.js\"",
+            "timeout": 5,
+            "statusMessage": "Tracking terse mode..."
+          }
+        ]
+      }
+    ]
+  }
+}

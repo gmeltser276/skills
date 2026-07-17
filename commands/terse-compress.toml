@@ -1,0 +1,2 @@
+description = "Compress a prose file (CLAUDE.md, memory note, todo, doc) in place. Saves a backup as <file>.original.<ext>."
+prompt = "Invoke the terse-compress skill to compress this file: {{args}}. Follow the skill exactly: read the file, write a backup, compress only the prose (preserve code blocks, URLs, paths, frontmatter, headings, tables), validate, write back, and report bytes saved. Output must be complete grammatical English - no fragments, no dropped articles, no telegraphic patterns."

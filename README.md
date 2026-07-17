@@ -1,6 +1,7 @@
-# terse-mode marketplace
+# skills marketplace
 
-A Claude Code plugin marketplace. Currently hosts one plugin, with room to add more.
+A Claude Code plugin marketplace (name: `skills`). Currently hosts one plugin, with room to
+add more. Source repo: gmeltser276/terse-mode.
 
 ## Installation
 
@@ -12,7 +13,7 @@ A Claude Code plugin marketplace. Currently hosts one plugin, with room to add m
 Or add it manually to `~/.claude/settings.json` under `extraKnownMarketplaces`:
 
 ```json
-"terse-mode": {
+"skills": {
   "source": {
     "source": "github",
     "repo": "gmeltser276/terse-mode"

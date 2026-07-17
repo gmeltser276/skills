@@ -1,6 +1,6 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
-  "name": "terse-mode",
+  "name": "skills",
   "description": "Token-efficient communication mode for Claude Code — brevity without dropping grammar.",
   "owner": { "name": "Gene Meltser" },
   "plugins": [

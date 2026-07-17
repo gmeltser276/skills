@@ -1,12 +1,12 @@
 # skills marketplace
 
 A Claude Code plugin marketplace (name: `skills`). Currently hosts one plugin, with room to
-add more. Source repo: gmeltser276/terse-mode.
+add more. Source repo: gmeltser276/skills.
 
 ## Installation
 
 ```
-/plugin marketplace add gmeltser276/terse-mode
+/plugin marketplace add gmeltser276/skills
 /plugin menu
 ```
 
@@ -16,7 +16,7 @@ Or add it manually to `~/.claude/settings.json` under `extraKnownMarketplaces`:
 "skills": {
   "source": {
     "source": "github",
-    "repo": "gmeltser276/terse-mode"
+    "repo": "gmeltser276/skills"
   }
 }
 ```

@@ -7,7 +7,7 @@
     {
       "name": "terse-mode",
       "description": "Be terse, not telegraphic. Cut filler; keep grammar and accuracy.",
-      "source": "./",
+      "source": "./plugins/terse-mode",
       "category": "productivity"
     }
   ]

@@ -1,7 +1,6 @@
 # skills marketplace
 
-A Claude Code plugin marketplace (name: `skills`). Currently hosts one plugin, with room to
-add more. Source repo: gmeltser276/skills.
+A Claude Code plugin marketplace.
 
 ## Installation
 

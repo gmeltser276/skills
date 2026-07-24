@@ -1,0 +1,6 @@
+{
+  "name": "deslop",
+  "description": "Remove AI writing patterns from prose. Redistributed from stephenturner/skill-deslop under the MIT license.",
+  "author": { "name": "Stephen D. Turner" },
+  "homepage": "https://github.com/stephenturner/skill-deslop"
+}

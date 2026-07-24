@@ -1,13 +1,49 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "skills",
-  "description": "Token-efficient communication mode for Claude Code — brevity without dropping grammar.",
+  "description": "Claude Code plugins for security leadership, planning, and writing work.",
   "owner": { "name": "Gene Meltser" },
   "plugins": [
     {
       "name": "terse-mode",
       "description": "Be terse, not telegraphic. Cut filler; keep grammar and accuracy.",
       "source": "./plugins/terse-mode",
+      "category": "productivity"
+    },
+    {
+      "name": "grill-me",
+      "description": "Stress-test a plan through relentless one-at-a-time questioning until every decision branch is resolved.",
+      "source": "./plugins/grill-me",
+      "category": "productivity"
+    },
+    {
+      "name": "reflection",
+      "description": "Review and improve Claude Code instructions, commands, and config based on where past responses fell short.",
+      "source": "./plugins/reflection",
+      "category": "productivity"
+    },
+    {
+      "name": "legislative-bill-analysis",
+      "description": "Analyze bills, executive orders, and regulatory frameworks through policy-intent and security-operations lenses.",
+      "source": "./plugins/legislative-bill-analysis",
+      "category": "research"
+    },
+    {
+      "name": "deslop",
+      "description": "Remove AI writing patterns from prose. MIT, from stephenturner/skill-deslop.",
+      "source": "./plugins/deslop",
+      "category": "writing"
+    },
+    {
+      "name": "humanizer",
+      "description": "Remove 50+ documented AI writing patterns across vocabulary, rhetoric, tone, and structure. MIT, from blader/humanizer.",
+      "source": "./plugins/humanizer",
+      "category": "writing"
+    },
+    {
+      "name": "six-hats",
+      "description": "Structured six-hats debate across six colored-perspective lenses. From juanallo/six-hats-skill; see plugin NOTICE.md for licensing status.",
+      "source": "./plugins/six-hats",
       "category": "productivity"
     }
   ]

@@ -1,0 +1,6 @@
+{
+  "name": "humanizer",
+  "description": "Identify and remove 50+ documented AI writing patterns across vocabulary, rhetoric, tone, and structure. Redistributed from blader/humanizer under the MIT license.",
+  "author": { "name": "Siqi Chen" },
+  "homepage": "https://github.com/blader/humanizer"
+}

@@ -1,0 +1,5 @@
+{
+  "name": "reflection",
+  "description": "Review and improve Claude Code instructions, commands, and config by analyzing where past responses fell short.",
+  "author": { "name": "Gene Meltser" }
+}

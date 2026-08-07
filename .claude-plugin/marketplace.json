@@ -63,6 +63,12 @@
       "description": "Tenable Vulnerability Management MCP server.",
       "source": "./plugins/tenable-mcp",
       "category": "security"
+    },
+    {
+      "name": "gti-mcp",
+      "description": "Google Threat Intelligence MCP server (VirusTotal-backed).",
+      "source": "./plugins/gti-mcp",
+      "category": "security"
     }
   ]
 }

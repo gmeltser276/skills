@@ -34,6 +34,7 @@ Or add it manually to `~/.claude/settings.json` under `extraKnownMarketplaces`:
 | [falcon-commercial-mcp](plugins/falcon-commercial-mcp/) | CrowdStrike Falcon MCP server for the Commercial CID, read-only. |
 | [falcon-gov-mcp](plugins/falcon-gov-mcp/) | CrowdStrike Falcon MCP server for the GovCloud CID, read-only. |
 | [tenable-mcp](plugins/tenable-mcp/) | Tenable Vulnerability Management MCP server. |
+| [gti-mcp](plugins/gti-mcp/) | Google Threat Intelligence MCP server (VirusTotal-backed). |
 
 ## License
 

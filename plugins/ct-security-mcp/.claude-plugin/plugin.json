@@ -1,0 +1,49 @@
+{
+  "name": "ct-security-mcp",
+  "description": "CrowdStrike Falcon (Commercial and GovCloud) and Tenable Vulnerability Management MCP servers for the State of Connecticut security team.",
+  "author": { "name": "Gene Meltser" },
+  "userConfig": {
+    "falcon_commercial_client_id": {
+      "type": "string",
+      "title": "Falcon Commercial API Client ID",
+      "description": "OAuth2 client ID for a Falcon API client on the Commercial CID, read-only recommended.",
+      "sensitive": true,
+      "required": true
+    },
+    "falcon_commercial_client_secret": {
+      "type": "string",
+      "title": "Falcon Commercial API Client Secret",
+      "description": "OAuth2 client secret paired with the Commercial client ID above.",
+      "sensitive": true,
+      "required": true
+    },
+    "falcon_gov_client_id": {
+      "type": "string",
+      "title": "Falcon GovCloud API Client ID",
+      "description": "OAuth2 client ID for a Falcon API client on the GovCloud CID, read-only recommended.",
+      "sensitive": true,
+      "required": true
+    },
+    "falcon_gov_client_secret": {
+      "type": "string",
+      "title": "Falcon GovCloud API Client Secret",
+      "description": "OAuth2 client secret paired with the GovCloud client ID above.",
+      "sensitive": true,
+      "required": true
+    },
+    "tenable_access_key": {
+      "type": "string",
+      "title": "Tenable API Access Key",
+      "description": "Access Key from Settings > My Account > API Keys in Tenable Vulnerability Management.",
+      "sensitive": true,
+      "required": true
+    },
+    "tenable_secret_key": {
+      "type": "string",
+      "title": "Tenable API Secret Key",
+      "description": "Secret Key paired with the Access Key above.",
+      "sensitive": true,
+      "required": true
+    }
+  }
+}

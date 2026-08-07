@@ -47,9 +47,21 @@
       "category": "productivity"
     },
     {
-      "name": "ct-security-mcp",
-      "description": "CrowdStrike Falcon (Commercial and GovCloud) and Tenable Vulnerability Management MCP servers for the State of Connecticut security team.",
-      "source": "./plugins/ct-security-mcp",
+      "name": "falcon-commercial-mcp",
+      "description": "CrowdStrike Falcon MCP server for the Commercial CID, read-only.",
+      "source": "./plugins/falcon-commercial-mcp",
+      "category": "security"
+    },
+    {
+      "name": "falcon-gov-mcp",
+      "description": "CrowdStrike Falcon MCP server for the GovCloud CID, read-only.",
+      "source": "./plugins/falcon-gov-mcp",
+      "category": "security"
+    },
+    {
+      "name": "tenable-mcp",
+      "description": "Tenable Vulnerability Management MCP server.",
+      "source": "./plugins/tenable-mcp",
       "category": "security"
     }
   ]

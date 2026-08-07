@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "falcon-commercial": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": ["falcon-mcp", "--read-only"],
+      "env": {
+        "FALCON_CLIENT_ID": "${user_config.falcon_commercial_client_id}",
+        "FALCON_CLIENT_SECRET": "${user_config.falcon_commercial_client_secret}",
+        "FALCON_BASE_URL": "https://api.us-2.crowdstrike.com"
+      }
+    }
+  }
+}

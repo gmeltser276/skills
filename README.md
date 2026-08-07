@@ -31,7 +31,9 @@ Or add it manually to `~/.claude/settings.json` under `extraKnownMarketplaces`:
 | [deslop](plugins/deslop/) | Remove AI writing patterns from prose. |
 | [humanizer](plugins/humanizer/) | Remove 50+ documented AI writing patterns across vocabulary, rhetoric, tone, and structure. |
 | [six-hats](plugins/six-hats/) | Structured six-hats debate across six colored-perspective lenses. |
-| [ct-security-mcp](plugins/ct-security-mcp/) | CrowdStrike Falcon (Commercial and GovCloud) and Tenable Vulnerability Management MCP servers for the State of Connecticut security team. |
+| [falcon-commercial-mcp](plugins/falcon-commercial-mcp/) | CrowdStrike Falcon MCP server for the Commercial CID, read-only. |
+| [falcon-gov-mcp](plugins/falcon-gov-mcp/) | CrowdStrike Falcon MCP server for the GovCloud CID, read-only. |
+| [tenable-mcp](plugins/tenable-mcp/) | Tenable Vulnerability Management MCP server. |
 
 ## License
 

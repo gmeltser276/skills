@@ -1,0 +1,21 @@
+{
+  "name": "tenable-mcp",
+  "description": "Tenable Vulnerability Management MCP server.",
+  "author": { "name": "Gene Meltser" },
+  "userConfig": {
+    "tenable_access_key": {
+      "type": "string",
+      "title": "Tenable API Access Key",
+      "description": "Access Key from Settings > My Account > API Keys in Tenable Vulnerability Management.",
+      "sensitive": true,
+      "required": true
+    },
+    "tenable_secret_key": {
+      "type": "string",
+      "title": "Tenable API Secret Key",
+      "description": "Secret Key paired with the Access Key above.",
+      "sensitive": true,
+      "required": true
+    }
+  }
+}

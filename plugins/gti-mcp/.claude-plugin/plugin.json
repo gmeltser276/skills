@@ -1,0 +1,14 @@
+{
+  "name": "gti-mcp",
+  "description": "Google Threat Intelligence MCP server (VirusTotal-backed).",
+  "author": { "name": "Gene Meltser" },
+  "userConfig": {
+    "vt_apikey": {
+      "type": "string",
+      "title": "VirusTotal API Key",
+      "description": "API key from your VirusTotal / Google Threat Intelligence account, used to authenticate the gti_mcp server.",
+      "sensitive": true,
+      "required": true
+    }
+  }
+}

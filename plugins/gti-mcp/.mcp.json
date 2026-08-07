@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "gti": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": ["--with", "mcp<2", "gti_mcp"],
+      "env": {
+        "VT_APIKEY": "${user_config.vt_apikey}"
+      }
+    }
+  }
+}

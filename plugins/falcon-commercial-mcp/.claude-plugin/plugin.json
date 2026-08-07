@@ -1,0 +1,21 @@
+{
+  "name": "falcon-commercial-mcp",
+  "description": "CrowdStrike Falcon MCP server for the Commercial CID, read-only.",
+  "author": { "name": "Gene Meltser" },
+  "userConfig": {
+    "falcon_commercial_client_id": {
+      "type": "string",
+      "title": "Falcon Commercial API Client ID",
+      "description": "OAuth2 client ID for a Falcon API client on the Commercial CID, read-only recommended.",
+      "sensitive": true,
+      "required": true
+    },
+    "falcon_commercial_client_secret": {
+      "type": "string",
+      "title": "Falcon Commercial API Client Secret",
+      "description": "OAuth2 client secret paired with the Commercial client ID above.",
+      "sensitive": true,
+      "required": true
+    }
+  }
+}

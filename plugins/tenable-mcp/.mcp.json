@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "tenable": {
+      "type": "http",
+      "url": "https://cloud.tenable.com/mcp/",
+      "headers": {
+        "X-ApiKeys": "accessKey=${user_config.tenable_access_key};secretKey=${user_config.tenable_secret_key}"
+      }
+    }
+  }
+}

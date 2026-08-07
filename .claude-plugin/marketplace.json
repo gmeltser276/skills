@@ -45,6 +45,12 @@
       "description": "Structured six-hats debate across six colored-perspective lenses. From juanallo/six-hats-skill; see plugin NOTICE.md for licensing status.",
       "source": "./plugins/six-hats",
       "category": "productivity"
+    },
+    {
+      "name": "ct-security-mcp",
+      "description": "CrowdStrike Falcon (Commercial and GovCloud) and Tenable Vulnerability Management MCP servers for the State of Connecticut security team.",
+      "source": "./plugins/ct-security-mcp",
+      "category": "security"
     }
   ]
 }

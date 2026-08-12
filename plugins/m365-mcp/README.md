@@ -11,7 +11,11 @@ node --version                        # 20 or higher
 npm install -g @pnp/cli-microsoft365  # must be the global npm install
 ```
 
-The global npm install is not optional and not a duplicate of the MCP server package. The server ships only the protocol layer and shells out to the `m365` binary, and its `m365_search_commands` and `m365_get_command_docs` tools locate their data files by running `npm list -g`. A Homebrew or project-local CLI leaves those two tools reporting `@pnp/cli-microsoft365 npm package not found` while `m365_run_command` still works, so the server looks healthy while answering command-syntax questions wrongly.
+The global npm install is not optional and not a duplicate of the MCP server package. The server ships only the protocol layer and shells out to the `m365` binary, and its `m365_search_commands` and `m365_get_command_docs` tools locate their data files by running `npm list -g`.
+
+Two ways to get this wrong. Installing the CLI as a project-local dependency rather than globally, or running two Node installs so the CLI is registered under one npm while the server runs under the other. Either leaves those two tools reporting `@pnp/cli-microsoft365 npm package not found` while `m365_run_command` still works, so the server shows as connected and answers command-syntax questions wrongly. One Node, one npm, one global root.
+
+There is no Homebrew formula for the CLI, so npm is the only install path for it. Homebrew is a fine source for the Node runtime itself.
 
 ## Credentials
 

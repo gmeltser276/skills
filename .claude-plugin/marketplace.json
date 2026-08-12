@@ -2,7 +2,9 @@
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "skills",
   "description": "Claude Code plugins for security leadership, planning, and writing work.",
-  "owner": { "name": "Gene Meltser" },
+  "owner": {
+    "name": "Gene Meltser"
+  },
   "plugins": [
     {
       "name": "terse-mode",
@@ -69,6 +71,12 @@
       "description": "Google Threat Intelligence MCP server (VirusTotal-backed).",
       "source": "./plugins/gti-mcp",
       "category": "security"
+    },
+    {
+      "name": "m365-mcp",
+      "description": "CLI for Microsoft 365 MCP server. Manage the tenant with m365 commands.",
+      "source": "./plugins/m365-mcp",
+      "category": "productivity"
     }
   ]
 }

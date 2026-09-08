@@ -1,12 +1,13 @@
 {
   "name": "falcon-commercial-mcp",
-  "description": "CrowdStrike Falcon MCP server for the Commercial CID, read-only.",
+  "version": "0.2.0",
+  "description": "CrowdStrike Falcon MCP server for the Commercial CID, full access including RTR and containment.",
   "author": { "name": "Gene Meltser" },
   "userConfig": {
     "falcon_commercial_client_id": {
       "type": "string",
       "title": "Falcon Commercial API Client ID",
-      "description": "OAuth2 client ID for a Falcon API client on the Commercial CID, read-only recommended.",
+      "description": "OAuth2 client ID for your Falcon API client on the Commercial CID. The scopes on this client are what govern your access; the plugin does not filter tools.",
       "sensitive": true,
       "required": true
     },

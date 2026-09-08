@@ -1,12 +1,13 @@
 {
   "name": "falcon-gov-mcp",
-  "description": "CrowdStrike Falcon MCP server for the GovCloud CID, read-only.",
+  "version": "0.2.0",
+  "description": "CrowdStrike Falcon MCP server for the GovCloud CID, full access including RTR and containment.",
   "author": { "name": "Gene Meltser" },
   "userConfig": {
     "falcon_gov_client_id": {
       "type": "string",
       "title": "Falcon GovCloud API Client ID",
-      "description": "OAuth2 client ID for a Falcon API client on the GovCloud CID, read-only recommended.",
+      "description": "OAuth2 client ID for your Falcon API client on the GovCloud CID. The scopes on this client are what govern your access; the plugin does not filter tools.",
       "sensitive": true,
       "required": true
     },

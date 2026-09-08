@@ -50,13 +50,13 @@
     },
     {
       "name": "falcon-commercial-mcp",
-      "description": "CrowdStrike Falcon MCP server for the Commercial CID, read-only.",
+      "description": "CrowdStrike Falcon MCP server for the Commercial CID, full access including RTR and containment.",
       "source": "./plugins/falcon-commercial-mcp",
       "category": "security"
     },
     {
       "name": "falcon-gov-mcp",
-      "description": "CrowdStrike Falcon MCP server for the GovCloud CID, read-only.",
+      "description": "CrowdStrike Falcon MCP server for the GovCloud CID, full access including RTR and containment.",
       "source": "./plugins/falcon-gov-mcp",
       "category": "security"
     },

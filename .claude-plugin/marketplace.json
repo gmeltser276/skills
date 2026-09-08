@@ -68,7 +68,7 @@
     },
     {
       "name": "gti-mcp",
-      "description": "Google Threat Intelligence MCP server (VirusTotal-backed).",
+      "description": "Google Threat Intelligence MCP server (VirusTotal-backed). Includes a tool that uploads local files to VirusTotal.",
       "source": "./plugins/gti-mcp",
       "category": "security"
     },

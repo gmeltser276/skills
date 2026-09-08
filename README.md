@@ -31,11 +31,24 @@ Or add it manually to `~/.claude/settings.json` under `extraKnownMarketplaces`:
 | [deslop](plugins/deslop/) | Remove AI writing patterns from prose. |
 | [humanizer](plugins/humanizer/) | Remove 50+ documented AI writing patterns across vocabulary, rhetoric, tone, and structure. |
 | [six-hats](plugins/six-hats/) | Structured six-hats debate across six colored-perspective lenses. |
-| [falcon-commercial-mcp](plugins/falcon-commercial-mcp/) | CrowdStrike Falcon MCP server for the Commercial CID, read-only. |
-| [falcon-gov-mcp](plugins/falcon-gov-mcp/) | CrowdStrike Falcon MCP server for the GovCloud CID, read-only. |
+| [falcon-commercial-mcp](plugins/falcon-commercial-mcp/) | CrowdStrike Falcon MCP server for the Commercial CID, full access including RTR and containment. |
+| [falcon-gov-mcp](plugins/falcon-gov-mcp/) | CrowdStrike Falcon MCP server for the GovCloud CID, full access including RTR and containment. |
 | [tenable-mcp](plugins/tenable-mcp/) | Tenable Vulnerability Management MCP server. |
 | [gti-mcp](plugins/gti-mcp/) | Google Threat Intelligence MCP server (VirusTotal-backed). |
 | [m365-mcp](plugins/m365-mcp/) | CLI for Microsoft 365 MCP server. Manage the tenant with m365 commands. |
+
+### Security tooling plugins
+
+`falcon-commercial-mcp` and `falcon-gov-mcp` expose the full CrowdStrike Falcon tool
+surface, including Real Time Response command execution, host containment, IOC and
+custom IOA management, and prevention policy changes. They do not filter tools.
+Authorization comes from Falcon API RBAC, so the scopes on the API client you configure
+are what decide access. Issue credentials accordingly.
+
+Both pin `falcon-mcp` to an exact version rather than tracking upstream, and both enable
+dynamic tool discovery so the server registers three discovery tools instead of all 169
+tool definitions. Every tool stays reachable; the difference is roughly 82,000 tokens of
+context per message versus 1,200. See each plugin's README for details.
 
 ## License
 

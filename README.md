@@ -34,7 +34,7 @@ Or add it manually to `~/.claude/settings.json` under `extraKnownMarketplaces`:
 | [falcon-commercial-mcp](plugins/falcon-commercial-mcp/) | CrowdStrike Falcon MCP server for the Commercial CID, full access including RTR and containment. |
 | [falcon-gov-mcp](plugins/falcon-gov-mcp/) | CrowdStrike Falcon MCP server for the GovCloud CID, full access including RTR and containment. |
 | [tenable-mcp](plugins/tenable-mcp/) | Tenable Vulnerability Management MCP server. |
-| [gti-mcp](plugins/gti-mcp/) | Google Threat Intelligence MCP server (VirusTotal-backed). |
+| [gti-mcp](plugins/gti-mcp/) | Google Threat Intelligence MCP server (VirusTotal-backed). Includes a tool that uploads local files to VirusTotal. |
 | [m365-mcp](plugins/m365-mcp/) | CLI for Microsoft 365 MCP server. Manage the tenant with m365 commands. |
 
 ### Security tooling plugins
@@ -49,6 +49,15 @@ Both pin `falcon-mcp` to an exact version rather than tracking upstream, and bot
 dynamic tool discovery so the server registers three discovery tools instead of all 169
 tool definitions. Every tool stays reachable; the difference is roughly 82,000 tokens of
 context per message versus 1,200. See each plugin's README for details.
+
+`gti-mcp` includes `analyse_file`, which reads a local file and uploads it to VirusTotal.
+Upstream documents that the file is shared with the VirusTotal community, so it is a
+one-way transfer of local data to a third party rather than a lookup. The upstream package
+cannot disable individual tools; block it with a `mcp__gti__analyse_file` deny rule in your
+Claude Code permissions if that is not acceptable in your environment. See the plugin
+[README](plugins/gti-mcp/) for details.
+
+`tenable-mcp` has not been reviewed for pinning or tool exposure.
 
 ## License
 

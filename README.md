@@ -57,7 +57,9 @@ cannot disable individual tools; block it with a `mcp__gti__analyse_file` deny r
 Claude Code permissions if that is not acceptable in your environment. See the plugin
 [README](plugins/gti-mcp/) for details.
 
-`tenable-mcp` has not been reviewed for pinning or tool exposure.
+`tenable-mcp` connects to a server Tenable hosts rather than running a local package, so
+there is no version to pin and Tenable controls the tool surface. Scope the API key pair
+accordingly.
 
 ## License
 

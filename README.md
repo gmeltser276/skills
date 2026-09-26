@@ -31,8 +31,8 @@ Or add it manually to `~/.claude/settings.json` under `extraKnownMarketplaces`:
 | [deslop](plugins/deslop/) | Remove AI writing patterns from prose. |
 | [humanizer](plugins/humanizer/) | Remove 50+ documented AI writing patterns across vocabulary, rhetoric, tone, and structure. |
 | [six-hats](plugins/six-hats/) | Structured six-hats debate across six colored-perspective lenses. |
-| [falcon-commercial-mcp](plugins/falcon-commercial-mcp/) | CrowdStrike Falcon MCP server for the Commercial CID, full access including RTR and containment. |
-| [falcon-gov-mcp](plugins/falcon-gov-mcp/) | CrowdStrike Falcon MCP server for the GovCloud CID, full access including RTR and containment. |
+| [falcon-commercial-mcp](plugins/falcon-commercial-mcp/) | CrowdStrike Falcon MCP server for the Commercial CID. Full write access to IOCs, IOAs, and policies; read-only RTR, no host containment. |
+| [falcon-gov-mcp](plugins/falcon-gov-mcp/) | CrowdStrike Falcon MCP server for the GovCloud CID. Full write access to IOCs, IOAs, and policies; read-only RTR, no host containment. |
 | [tenable-mcp](plugins/tenable-mcp/) | Tenable Vulnerability Management MCP server. |
 | [gti-mcp](plugins/gti-mcp/) | Google Threat Intelligence MCP server (VirusTotal-backed). Includes a tool that uploads local files to VirusTotal. |
 | [m365-mcp](plugins/m365-mcp/) | CLI for Microsoft 365 MCP server. Manage the tenant with m365 commands. |
@@ -40,10 +40,18 @@ Or add it manually to `~/.claude/settings.json` under `extraKnownMarketplaces`:
 ### Security tooling plugins
 
 `falcon-commercial-mcp` and `falcon-gov-mcp` expose the full CrowdStrike Falcon tool
-surface, including Real Time Response command execution, host containment, IOC and
-custom IOA management, and prevention policy changes. They do not filter tools.
-Authorization comes from Falcon API RBAC, so the scopes on the API client you configure
-are what decide access. Issue credentials accordingly.
+surface: 169 tools, of which 45 perform writes. Those cover IOC and custom IOA
+management, prevention and other host policy changes, host group and exclusion
+management, detection status updates, quarantined-file actions, Fusion SOAR workflow
+execution, and AgentWorks agent invocation. They do not filter tools. Authorization
+comes from Falcon API RBAC, so the scopes on the API client you configure are what
+decide access. Issue credentials accordingly.
+
+Two upstream limits are worth knowing before you build a workflow on these. Real Time
+Response is read-only - `falcon_execute_rtr_read_only_command` plus session management,
+with no active-responder or admin tool, so no `put`, `run`, or script execution. And
+`falcon-mcp` 0.19.0 exposes no host containment tool, so network-quarantining a host
+remains a Falcon console action.
 
 Both pin `falcon-mcp` to an exact version rather than tracking upstream, and both enable
 dynamic tool discovery so the server registers three discovery tools instead of all 169

@@ -50,13 +50,13 @@
     },
     {
       "name": "falcon-commercial-mcp",
-      "description": "CrowdStrike Falcon MCP server for the Commercial CID, full access including RTR and containment.",
+      "description": "CrowdStrike Falcon MCP server for the Commercial CID. Full write access to IOCs, IOAs, and policies; RTR is read-only and there is no host containment tool.",
       "source": "./plugins/falcon-commercial-mcp",
       "category": "security"
     },
     {
       "name": "falcon-gov-mcp",
-      "description": "CrowdStrike Falcon MCP server for the GovCloud CID, full access including RTR and containment.",
+      "description": "CrowdStrike Falcon MCP server for the GovCloud CID. Full write access to IOCs, IOAs, and policies; RTR is read-only and there is no host containment tool.",
       "source": "./plugins/falcon-gov-mcp",
       "category": "security"
     },

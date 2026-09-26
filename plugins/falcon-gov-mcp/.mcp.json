@@ -9,7 +9,7 @@
         "FALCON_CLIENT_SECRET": "${user_config.falcon_gov_client_secret}",
         "FALCON_BASE_URL": "https://api.laggar.gcw.crowdstrike.com",
         "FALCON_MCP_DYNAMIC": "true",
-        "FALCON_MCP_USER_AGENT_COMMENT": "ct-soc-cc-gov/0.2.0"
+        "FALCON_MCP_USER_AGENT_COMMENT": "ct-soc-cc-gov/0.2.1"
       }
     }
   }

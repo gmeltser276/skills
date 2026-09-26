@@ -2,11 +2,18 @@
 
 CrowdStrike Falcon MCP server for the GovCloud CID, `api.laggar.gcw.crowdstrike.com`.
 
-Runs `uvx falcon-mcp@0.19.0` with the full tool surface, including Real Time Response command execution, host containment, IOC and custom IOA management, prevention policy changes, Fusion workflow execution, and AgentWorks.
+Runs `uvx falcon-mcp@0.19.0` with the full tool surface: 169 tools, of which 45 perform writes. Those cover IOC and custom IOA management, prevention and other host policy changes, host group and exclusion management, detection status updates, quarantined-file actions, correlation rules, CSPM suppression rules, case management, Fusion SOAR workflow execution, and AgentWorks agent invocation.
 
 Authorization comes from Falcon API RBAC, not from this plugin. The scopes on your API client decide what you can actually do, so issue credentials accordingly.
 
 Product availability differs between GovCloud and Commercial, so some tools return errors for modules your GovCloud CID does not license.
+
+## What this cannot do
+
+Two limits come from upstream, not from this plugin:
+
+- **Real Time Response is read-only.** The RTR tools are `falcon_execute_rtr_read_only_command`, `falcon_run_rtr_read_only_command_and_wait`, and session init/pulse/delete plus inspection. There is no active-responder or admin tool, so no `put`, `run`, `xmemdump`, or script execution.
+- **There is no host containment tool.** `falcon-mcp` 0.19.0 exposes nothing that network-quarantines a host. Containment remains a Falcon console action.
 
 ## Prerequisites
 
@@ -47,7 +54,7 @@ Expect `falcon-gov` connected, registered under the scoped name `plugin:falcon-g
 
 ## Audit attribution
 
-API calls carry `ct-soc-cc-gov/0.2.0` in the User-Agent comment, which separates Claude Code GovCloud activity from the three other sources: the Claude Code Commercial plugin, and the two Claude Desktop bundles.
+API calls carry `ct-soc-cc-gov/0.2.1` in the User-Agent comment, which separates Claude Code GovCloud activity from the three other sources: the Claude Code Commercial plugin, and the two Claude Desktop bundles.
 
 ## Upstream status
 

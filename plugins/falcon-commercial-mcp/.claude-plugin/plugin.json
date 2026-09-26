@@ -1,7 +1,7 @@
 {
   "name": "falcon-commercial-mcp",
-  "version": "0.2.0",
-  "description": "CrowdStrike Falcon MCP server for the Commercial CID, full access including RTR and containment.",
+  "version": "0.2.1",
+  "description": "CrowdStrike Falcon MCP server for the Commercial CID. Full write access to IOCs, IOAs, and policies; RTR is read-only and there is no host containment tool.",
   "author": { "name": "Gene Meltser" },
   "userConfig": {
     "falcon_commercial_client_id": {

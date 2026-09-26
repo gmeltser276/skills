@@ -77,6 +77,12 @@
       "description": "CLI for Microsoft 365 MCP server. Manage the tenant with m365 commands.",
       "source": "./plugins/m365-mcp",
       "category": "productivity"
+    },
+    {
+      "name": "ctdata",
+      "description": "Query data.ct.gov and look up which agency a CT state employee works for. Needs the ctdata binaries from the plugin release.",
+      "source": "./plugins/ctdata",
+      "category": "research"
     }
   ]
 }

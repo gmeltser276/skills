@@ -1,0 +1,16 @@
+{
+  "name": "ctdata",
+  "version": "0.3.0",
+  "description": "Query Connecticut's open data portal (data.ct.gov) and look up which agency a state employee works for.",
+  "author": { "name": "Gene Meltser" },
+  "license": "Apache-2.0",
+  "userConfig": {
+    "app_token": {
+      "type": "string",
+      "title": "data.ct.gov app token (optional)",
+      "description": "Socrata app token. Leave empty to query without one at lower rate limits.",
+      "sensitive": true,
+      "required": false
+    }
+  }
+}

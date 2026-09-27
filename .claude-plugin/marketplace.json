@@ -1,7 +1,7 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "skills",
-  "description": "Claude Code plugins for security leadership, planning, and writing work.",
+  "description": "Claude Code plugins for planning and writing work.",
   "owner": {
     "name": "Gene Meltser"
   },
@@ -47,42 +47,6 @@
       "description": "Structured six-hats debate across six colored-perspective lenses. From juanallo/six-hats-skill; see plugin NOTICE.md for licensing status.",
       "source": "./plugins/six-hats",
       "category": "productivity"
-    },
-    {
-      "name": "falcon-commercial-mcp",
-      "description": "CrowdStrike Falcon MCP server for the Commercial CID. Full write access to IOCs, IOAs, and policies; RTR is read-only and there is no host containment tool.",
-      "source": "./plugins/falcon-commercial-mcp",
-      "category": "security"
-    },
-    {
-      "name": "falcon-gov-mcp",
-      "description": "CrowdStrike Falcon MCP server for the GovCloud CID. Full write access to IOCs, IOAs, and policies; RTR is read-only and there is no host containment tool.",
-      "source": "./plugins/falcon-gov-mcp",
-      "category": "security"
-    },
-    {
-      "name": "tenable-mcp",
-      "description": "Tenable Vulnerability Management MCP server.",
-      "source": "./plugins/tenable-mcp",
-      "category": "security"
-    },
-    {
-      "name": "gti-mcp",
-      "description": "Google Threat Intelligence MCP server (VirusTotal-backed). Includes a tool that uploads local files to VirusTotal.",
-      "source": "./plugins/gti-mcp",
-      "category": "security"
-    },
-    {
-      "name": "m365-mcp",
-      "description": "CLI for Microsoft 365 MCP server. Manage the tenant with m365 commands.",
-      "source": "./plugins/m365-mcp",
-      "category": "productivity"
-    },
-    {
-      "name": "ctdata",
-      "description": "Query data.ct.gov and look up which agency a CT state employee works for. Needs the ctdata binaries from the plugin release.",
-      "source": "./plugins/ctdata",
-      "category": "research"
     }
   ]
 }

@@ -52,7 +52,7 @@ Expect `falcon-commercial` connected, registered under the scoped name `plugin:f
 
 ## Audit attribution
 
-API calls carry `cc-falcon/0.2.1` in the User-Agent comment, which separates Claude Code activity from the Claude Desktop bundle (`mcpb-falcon/0.2.1`) and from console or script activity in Falcon audit logs.
+API calls carry `cc-falcon/0.2.2` in the User-Agent comment, which separates this plugin's activity from other Falcon API clients in audit logs.
 
 ## Upstream status
 

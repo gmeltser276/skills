@@ -54,7 +54,7 @@ Expect `falcon-gov` connected, registered under the scoped name `plugin:falcon-g
 
 ## Audit attribution
 
-API calls carry `cc-falcon-gov/0.2.1` in the User-Agent comment, which separates Claude Code GovCloud activity from the three other sources: the Claude Code Commercial plugin, and the two Claude Desktop bundles.
+API calls carry `cc-falcon-gov/0.2.2` in the User-Agent comment, which separates this plugin's activity from other Falcon API clients in audit logs.
 
 ## Upstream status
 

@@ -1,6 +1,6 @@
 {
   "name": "falcon-gov-mcp",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "CrowdStrike Falcon MCP server for the GovCloud CID. Full write access to IOCs, IOAs, and policies; RTR is read-only and there is no host containment tool.",
   "author": { "name": "Gene Meltser" },
   "userConfig": {

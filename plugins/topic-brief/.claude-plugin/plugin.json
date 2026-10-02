@@ -1,0 +1,5 @@
+{
+  "name": "topic-brief",
+  "description": "Synthesize a decision-ready brief on a research topic from Obsidian web clippings, with an update mode that tracks how the view changed.",
+  "author": { "name": "Gene Meltser" }
+}

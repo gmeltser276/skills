@@ -49,12 +49,6 @@
       "category": "productivity"
     },
     {
-      "name": "cli-microsoft365",
-      "description": "Run CLI for Microsoft 365 (m365) commands to manage SharePoint, Entra ID, Teams, Planner, Outlook, and Microsoft Graph from the terminal.",
-      "source": "./plugins/cli-microsoft365",
-      "category": "productivity"
-    },
-    {
       "name": "topic-brief",
       "description": "Synthesize a decision-ready brief on a research topic from Obsidian web clippings.",
       "source": "./plugins/topic-brief",

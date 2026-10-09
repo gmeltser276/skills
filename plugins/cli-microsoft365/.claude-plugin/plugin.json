@@ -1,5 +1,0 @@
-{
-  "name": "cli-microsoft365",
-  "description": "Run CLI for Microsoft 365 (m365) commands to manage SharePoint, Entra ID, Teams, Planner, Outlook, and Microsoft Graph from the terminal.",
-  "author": { "name": "Gene Meltser" }
-}

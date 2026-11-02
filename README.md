@@ -33,19 +33,21 @@ Or add it manually to `~/.claude/settings.json` under `extraKnownMarketplaces`:
 | [six-hats](plugins/six-hats/) | Structured six-hats debate across six colored-perspective lenses. |
 | [cli-microsoft365](plugins/cli-microsoft365/) | Run CLI for Microsoft 365 (m365) commands for SharePoint, Entra ID, Teams, Planner, Outlook, and Microsoft Graph. |
 | [topic-brief](plugins/topic-brief/) | Synthesize a decision-ready brief on a research topic from Obsidian web clippings. |
+| [second-opinion](plugins/second-opinion/) | Independent code review from Codex or Antigravity for uncommitted changes, branch diffs, and commits. |
 
 ## License
 
 The marketplace itself and the plugins authored here - `terse-mode`, `grill-me`,
 `reflection`, `legislative-bill-analysis`, `cli-microsoft365`, `topic-brief` - are MIT, see LICENSE.
 
-Three plugins redistribute upstream work and carry their own terms:
+Four plugins redistribute upstream work and carry their own terms:
 
 | Plugin | Upstream | License |
 |--------|----------|---------|
 | deslop | [stephenturner/skill-deslop](https://github.com/stephenturner/skill-deslop) | MIT, see plugin LICENSE |
 | humanizer | [blader/humanizer](https://github.com/blader/humanizer) | MIT, see plugin LICENSE |
 | six-hats | [juanallo/six-hats-skill](https://github.com/juanallo/six-hats-skill) | None declared, see plugin [NOTICE.md](plugins/six-hats/NOTICE.md) |
+| second-opinion | [trailofbits/skills](https://github.com/trailofbits/skills) | CC BY-SA 4.0, see plugin LICENSE and [NOTICE.md](plugins/second-opinion/NOTICE.md) |
 
 `legislative-bill-analysis` derives its output structure from danielmiessler/fabric's
 `analyze_bill` pattern (MIT), substantially rewritten.

@@ -1,0 +1,7 @@
+{
+  "name": "second-opinion",
+  "version": "0.1.0",
+  "description": "Gets independent code reviews from Codex or Antigravity for uncommitted changes, branch diffs, and commits. Redistributed from trailofbits/skills under CC BY-SA 4.0 with an updated Codex model list.",
+  "author": { "name": "Dan Guido" },
+  "homepage": "https://github.com/trailofbits/skills"
+}

@@ -49,12 +49,6 @@
       "category": "productivity"
     },
     {
-      "name": "topic-brief",
-      "description": "Synthesize a decision-ready brief on a research topic from Obsidian web clippings.",
-      "source": "./plugins/topic-brief",
-      "category": "research"
-    },
-    {
       "name": "second-opinion",
       "description": "Independent code review from Codex or Antigravity for uncommitted changes, branch diffs, and commits. CC BY-SA 4.0, from trailofbits/skills.",
       "source": "./plugins/second-opinion",

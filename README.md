@@ -31,13 +31,12 @@ Or add it manually to `~/.claude/settings.json` under `extraKnownMarketplaces`:
 | [deslop](plugins/deslop/) | Remove AI writing patterns from prose. |
 | [humanizer](plugins/humanizer/) | Remove 50+ documented AI writing patterns across vocabulary, rhetoric, tone, and structure. |
 | [six-hats](plugins/six-hats/) | Structured six-hats debate across six colored-perspective lenses. |
-| [topic-brief](plugins/topic-brief/) | Synthesize a decision-ready brief on a research topic from Obsidian web clippings. |
 | [second-opinion](plugins/second-opinion/) | Independent code review from Codex or Antigravity for uncommitted changes, branch diffs, and commits. |
 
 ## License
 
 The marketplace itself and the plugins authored here - `terse-mode`, `grill-me`,
-`reflection`, `legislative-bill-analysis`, `topic-brief` - are MIT, see LICENSE.
+`reflection`, `legislative-bill-analysis` - are MIT, see LICENSE.
 
 Four plugins redistribute upstream work and carry their own terms:
 
